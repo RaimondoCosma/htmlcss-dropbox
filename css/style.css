@@ -149,7 +149,7 @@ main .container .row > div > small {
     border-bottom: 1px solid #d0d0d3;
 }
 main .container .row .promo-mini-container {
-    padding: 35px 30px 45px;
+    padding: 35px 30px 25px;
 }
 main .container .row .promo-mini-container strong {
     padding: 25px 0 15px;
