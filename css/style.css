@@ -85,7 +85,8 @@ header .row li:not(:last-child) {
     padding-top: 98px;
 }
 .hero .big-container .row{
-    padding: 45px 0 0 0;
+    padding: 60px 0 0 0;
+    align-items: stretch;
 }
 .hero .big-container .row .col-description{
     width: 30%;
@@ -101,4 +102,14 @@ header .row li:not(:last-child) {
 .hero .big-container .row .col-description .btn-info div i{
     font-size: 40px;
     color: black;
+    padding-bottom: 25px;
 }
+.hero .big-container .row .col-image {
+    position: relative;
+    width: 70%;
+}
+.hero .big-container .row .col-image img {
+    position: absolute;
+    width: 100%;
+}
+
