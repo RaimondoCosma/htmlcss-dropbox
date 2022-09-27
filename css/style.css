@@ -36,6 +36,7 @@ strong {
 ------------- */
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 .row li {
     list-style: none;
@@ -257,9 +258,6 @@ main .container .row-enterprise .width70 span {
 #operation h2 {
     padding-bottom: 75px;
 }
-#operation .row {
-    flex-wrap: wrap;
-}
 #operation .col-operation {
     padding-bottom: 65px;
 }
@@ -268,4 +266,23 @@ main .container .row-enterprise .width70 span {
 }
 #operation .col-operation h3 {
     padding-bottom: 35px;
+}
+
+
+/* -------------
+    SEZIONE COOPERATION
+------------- */
+#cooperation .container a {
+    display: block;
+    padding: 60px 0 145px;
+}
+#cooperation .cooperation-logos {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    border: 1px dashed red;
+}
+#cooperation .cooperation-logos .col-logos {
+    width: 50%;
+    height: 50%;
+    border: 1px dashed green;
 }
