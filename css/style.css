@@ -251,6 +251,9 @@ main .container .row-enterprise .width70 span {
 /* -------------
     SEZIONE OPERAZIONI
 ------------- */
+#operation {
+    margin-bottom: 200px;
+}
 #operation h2 {
     padding-bottom: 75px;
 }
