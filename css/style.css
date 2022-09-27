@@ -18,7 +18,7 @@ h1, h2, h3, h4 {
     color: black;
 }
 h1 {
-    font-size: 55px;
+    font-size: 60px;
 }
 h2 {
     font-size: 30px;
@@ -45,7 +45,7 @@ strong {
     color: inherit;
 }
 .btn {
-    background-color: #0061ff;
+    background-color: rgba(0, 97, 255, 1);
     border: none;
     color: white;
     font-family: inherit;
@@ -54,6 +54,10 @@ strong {
     cursor: pointer;
     padding: 12px 0;
     width: 100%;
+}
+.btn:hover {
+    background-color: rgba(0, 97, 255, 0.7);
+    transform: scale(1.2);
 }
 .big-container {
     max-width: 1200px;
@@ -66,6 +70,12 @@ strong {
 i {
     color: black;
 }
+.width30 {
+    width: 30%;
+}
+.width70 {
+    width: 70%;
+}
 
 
 /* -------------
@@ -73,6 +83,9 @@ i {
 ------------- */
 header {
     position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     padding: 25px 20px;
@@ -104,26 +117,23 @@ header .row li:not(:last-child) {
 .hero .big-container .row{
     padding: 60px 0 25px;
 }
-.hero .big-container .row .col-description{
-    width: 30%;
-}
-.hero .big-container .row .col-description .btn-info{
+.hero .big-container .row .width30 .btn-info{
     width: 65%;
     margin-top: 30px;
 }
-.hero .big-container .row .col-description .btn-info div span{
+.hero .big-container .row .width30 .btn-info div span{
     display: block;
     padding: 30px 0 80px;
 }
-.hero .big-container .row .col-description .btn-info div i{
+.hero .big-container .row .width30 .btn-info div i{
     font-size: 40px;
     color: black;
 }
-.hero .big-container .row .col-image {
+.hero .big-container .row .width70 {
     position: relative;
     width: 70%;
 }
-.hero .big-container .row .col-image img {
+.hero .big-container .row .width70 img {
     position: absolute;
     width: 100%;
 }
@@ -148,12 +158,17 @@ main .container .row > div > small {
     padding: 10px 0;
     border-bottom: 1px solid #d0d0d3;
 }
-main .container .row .promo-mini-container {
+main .container .promo-mini-container {
     padding: 35px 30px 25px;
 }
-main .container .row .promo-mini-container strong {
+main .container .promo-mini-container strong {
+    font-size: 14px;
     padding: 25px 0 15px;
 }
+main .container .promo-mini-container h4 {
+    margin-top: 50px;
+}
+
 main .container .row .promo-mini-container .promo-details {
     margin: 50px 0 25px;
 }
@@ -178,3 +193,26 @@ main .container .row .promo-mini-container .promo-details h4 {
 main .container .row .promo-mini-container .promo-details .fa-check {
     color: #0061ff;
 }
+
+/* -------------
+    PIANO BUSINESS ORIZZONTALE
+------------- */
+main .container .row-enterprise {
+    margin: 50px 0 150px;
+    border: 1px solid #d0d0d3;
+}
+main .container .row-enterprise small {
+    display: block;
+    text-align: center;
+    padding: 15px 0 10px;
+    border-bottom: 1px solid #d0d0d3;
+}
+.row-enterprise .promo-mini-container {
+    display: flex;
+}
+main .container .row-enterprise .width70 span {
+    display: block;
+  font-size: 14px;
+  padding: 40px 0 25px;
+}
+
