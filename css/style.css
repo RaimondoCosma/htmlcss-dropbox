@@ -331,3 +331,16 @@ main .container .row-enterprise .width70 span {
 #cooperation .middle-logo p {
     padding-bottom: 50px;
 }
+
+
+/* -------------
+    SEZIONE PROMO
+------------- */
+#promo {
+    background-color: #b4d0e7;
+    margin-bottom: 160px;
+}
+#promo .row {
+    padding: 130px 0;
+    justify-content: space-between;
+}
