@@ -164,9 +164,8 @@ header .row li:not(:last-child) {
 main .container .row {
     justify-content: space-between;
 }
-main .container .row > div {
+main .container .row > .col-business {
     border: 1px solid #d0d0d3;
-    width: 30%;
 }
 main .container .row > div > small {
     text-align: center;
@@ -250,5 +249,20 @@ main .container .row-enterprise .width70 span {
 }
 
 /* -------------
-    FLEX IMMAGINE E TESTO
+    SEZIONE OPERAZIONI
 ------------- */
+#operation h2 {
+    padding-bottom: 75px;
+}
+#operation .row {
+    flex-wrap: wrap;
+}
+#operation .col-operation {
+    padding-bottom: 65px;
+}
+#operation .col-operation img {
+    width: 100%;
+}
+#operation .col-operation h3 {
+    padding-bottom: 35px;
+}
