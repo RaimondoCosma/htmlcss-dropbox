@@ -54,10 +54,21 @@ strong {
     cursor: pointer;
     padding: 12px 0;
     width: 100%;
+    transition: 0.4s;
+}
+.btn-secondary {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 1);
+    color: #313039;
+    font-weight: normal;
+    border: 1px solid black;
 }
 .btn:hover {
     background-color: rgba(0, 97, 255, 0.7);
     transform: scale(1.2);
+}
+.btn-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .big-container {
     max-width: 1200px;
@@ -76,7 +87,12 @@ i {
 .width70 {
     width: 70%;
 }
-
+.width60 {
+    width: 60%;
+}
+.width40 {
+    width: 40%;
+}
 
 /* -------------
     HEADER   
@@ -216,3 +232,23 @@ main .container .row-enterprise .width70 span {
   padding: 40px 0 25px;
 }
 
+/* -------------
+    FLEX IMMAGINE E TESTO
+------------- */
+#partner {
+    margin-bottom: 160px;
+}
+#partner .width60 img {
+    width: 100%;
+}
+#partner .width40 {
+    padding: 50px;
+}
+#partner .width40 p{
+    font-size: 14px;
+    padding: 15px 0 30px;
+}
+
+/* -------------
+    FLEX IMMAGINE E TESTO
+------------- */
