@@ -30,6 +30,9 @@ strong {
     color: black;
     display: block;
 }
+footer {
+    color: white;
+}
 
 /* -------------
     COMMONS   
@@ -65,11 +68,11 @@ strong {
     border: 1px solid black;
 }
 .btn:hover {
-    background-color: rgba(0, 97, 255, 0.7);
+    background-color: rgba(0, 97, 255, 0.8);
     transform: scale(1.2);
 }
 .btn-secondary:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .big-container {
     max-width: 1200px;
@@ -355,6 +358,7 @@ main .container .row-enterprise .width70 span {
     right: 0;
 }
 
+
 /* -------------
     SEZIONE FAQ
 ------------- */
@@ -389,3 +393,42 @@ main .container .row-enterprise .width70 span {
     padding-top: 40px;
 }
 
+
+/* -------------
+    FOOTER
+------------- */
+#info {
+    background-color: #000;
+}
+footer h3 {
+    color: inherit;
+    margin-bottom: 30px;
+}
+#info .row  {
+    justify-content: space-between;
+    padding-top: 100px;
+}
+#info .big-container .col-info {
+    width: 14%;
+}
+#info .big-container .col-info:first-child {
+    border-bottom: 1px solid white;
+}
+#info .big-container .col-info li:not(:last-child) {
+    margin-bottom: 15px;
+}
+#info .big-container .col-info li:last-child {
+    margin-bottom: 110px;
+}
+#info .lenguage {
+    padding: 50px 0;
+}
+#info .fa-earth-americas {
+    color: inherit;
+    padding-right: 10px;
+}
+#info .fa-sort-up {
+    color: inherit;
+    position: relative;
+    top: 5px;
+}
