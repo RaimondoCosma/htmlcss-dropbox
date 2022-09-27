@@ -94,6 +94,13 @@ i {
 .width40 {
     width: 40%;
 }
+#cooperation .row .row .row {
+    justify-content: center;
+    align-items: center;
+}
+#cooperation .cooperation-logos img {
+    width: 50%;    
+}
 
 /* -------------
     HEADER   
@@ -228,8 +235,8 @@ main .container .row-enterprise small {
 }
 main .container .row-enterprise .width70 span {
     display: block;
-  font-size: 14px;
-  padding: 40px 0 25px;
+    font-size: 14px;
+    padding: 40px 0 25px;
 }
 
 /* -------------
@@ -285,4 +292,17 @@ main .container .row-enterprise .width70 span {
     width: 50%;
     height: 50%;
     border: 1px dashed green;
+}
+#cooperation .left-logos div:first-child {
+    background-color: #a2d39b;
+    width: 50%;
+}
+#cooperation .left-logos div:nth-child(2) {
+    background-color: #61082b;
+}
+#cooperation .left-logos div:nth-child(3) {
+    background-color: #0093ce;
+}
+#cooperation .left-logos div:nth-child(4) {
+    background-color: #ff1c1c;
 }
