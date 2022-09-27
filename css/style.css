@@ -317,4 +317,17 @@ main .container .row-enterprise .width70 span {
 }
 #cooperation .middle-logo {
     background-color: #f5f5f5;
+    padding: 50px;
+    overflow-y: auto;
+}
+#cooperation .middle-logo img {
+    fill: #000;
+}
+#cooperation .middle-logo hr {
+    color: #d0d0d3;
+    width: 20%;
+    margin: 40px 0;
+}
+#cooperation .middle-logo p {
+    padding-bottom: 50px;
 }
