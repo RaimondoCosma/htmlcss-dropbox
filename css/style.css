@@ -286,16 +286,13 @@ main .container .row-enterprise .width70 span {
 #cooperation .cooperation-logos {
     width: calc(100vw / 3);
     height: calc(100vw / 3);
-    border: 1px dashed red;
 }
 #cooperation .cooperation-logos .col-logos {
     width: 50%;
     height: 50%;
-    border: 1px dashed green;
 }
 #cooperation .left-logos div:first-child {
     background-color: #a2d39b;
-    width: 50%;
 }
 #cooperation .left-logos div:nth-child(2) {
     background-color: #61082b;
@@ -305,4 +302,19 @@ main .container .row-enterprise .width70 span {
 }
 #cooperation .left-logos div:nth-child(4) {
     background-color: #ff1c1c;
+}
+#cooperation .right-logos div:first-child {
+    background-color: #d5001f;
+}
+#cooperation .right-logos div:nth-child(2) {
+    background-color: #b4d0e7;
+}
+#cooperation .right-logos div:nth-child(3) {
+    background-color: #0d2481;
+}
+#cooperation .right-logos div:nth-child(4) {
+    background-color: #ffd830;
+}
+#cooperation .middle-logo {
+    background-color: #f5f5f5;
 }
