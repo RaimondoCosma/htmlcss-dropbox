@@ -30,6 +30,7 @@ header .row li:not(:last-child) {
     padding: 12px 0 5px;
 }
 
+
 /* -------------
     MAIN   
 ------------- */
@@ -60,6 +61,7 @@ header .row li:not(:last-child) {
     position: absolute;
     width: 100%;
 }
+
 
 /* -------------
     PIANI BUSINESS   
@@ -130,6 +132,7 @@ main .container .row {
     color: #0061ff;
 }
 
+
 /* -------------
     PIANO BUSINESS ORIZZONTALE
 ------------- */
@@ -152,6 +155,7 @@ main .container .row-enterprise .width70 span {
     padding: 40px 0 25px;
 }
 
+
 /* -------------
     FLEX IMMAGINE E TESTO
 ------------- */
@@ -168,6 +172,7 @@ main .container .row-enterprise .width70 span {
     font-size: 14px;
     padding: 15px 0 30px;
 }
+
 
 /* -------------
     SEZIONE OPERAZIONI
