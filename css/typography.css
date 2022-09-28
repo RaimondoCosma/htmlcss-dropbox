@@ -1,0 +1,30 @@
+/* -------------
+    TYPOGRAPHY   
+------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #676767;
+}
+h1, h2, h3, h4 {
+    color: black;
+}
+h1 {
+    font-size: 71px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 20px;
+}
+#hero .big-container .row .width30 .btn-info div i{
+    font-size: 40px;
+    color: black;
+}
+strong {
+    color: black;
+    display: block;
+}
+footer {
+    color: white;
+}

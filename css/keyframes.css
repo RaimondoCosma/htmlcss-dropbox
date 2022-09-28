@@ -1,0 +1,53 @@
+/* -------------
+    KEYFRAMES
+------------- */
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+    
+
+@keyframes rotation-zoom {
+    from {
+        transform: scale(1) rotate(0);
+        filter: grayscale(1);
+    }
+    to {
+        transform: scale(0.4) rotate(360deg);
+        filter: grayscale(1);
+    }
+}
+
+@keyframes scale-zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.6);
+    }
+    58% {
+        transform: scale(1);
+    }
+    67.5% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1);
+    }
+    82.5% {
+        transform: scale(0.9);
+    }
+    90% {
+        transform: scale(1);
+   }
+} 
