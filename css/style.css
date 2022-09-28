@@ -312,6 +312,9 @@ main .container .row-enterprise .width70 span {
 /* -------------
     SEZIONE COOPERATION
 ------------- */
+#cooperation .container .row {
+    flex-wrap: nowrap;
+}
 #cooperation .container a {
     display: block;
     margin: 60px 0 145px;
