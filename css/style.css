@@ -313,8 +313,15 @@ main .container .row-enterprise .width70 span {
     width: 50%;
     height: 50%;
 }
+#cooperation .cooperation-logos .col-logos:hover {
+    cursor: pointer;
+    animation: rotation-zoom 0.6s;
+    animation-timing-function: cubic-bezier(.34,.26,.58,-0.03);
+}
+
 #cooperation .left-logos div:first-child {
     background-color: #a2d39b;
+    box-shadow: inset 0 0 0 0.8vw #d1e9cd;
 }
 #cooperation .left-logos div:nth-child(2) {
     background-color: #61082b;
@@ -341,6 +348,11 @@ main .container .row-enterprise .width70 span {
     background-color: #f5f5f5;
     padding: 50px;
     overflow-y: auto;
+}
+#cooperation .middle-logo:hover {
+    cursor: pointer;
+    animation: scale-zoom 1.5s;
+    animation-timing-function: cubic-bezier(.71,.33,.67,.16);
 }
 #cooperation .middle-logo img {
     fill: #000;
@@ -509,5 +521,38 @@ footer h3 {
     }
   }
     
-  
-  
+
+@keyframes rotation-zoom {
+    from {
+        transform: scale(1) rotate(0);
+        filter: grayscale(1);
+    }
+    to {
+        transform: scale(0.4) rotate(360deg);
+        filter: grayscale(1);
+    }
+}
+
+@keyframes scale-zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.6);
+    }
+    58% {
+        transform: scale(1);
+    }
+    67.5% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1);
+    }
+    82.5% {
+        transform: scale(0.9);
+    }
+    90% {
+        transform: scale(1);
+   }
+} 
