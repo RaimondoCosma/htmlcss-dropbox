@@ -71,8 +71,22 @@ footer {
     background-color: rgba(0, 97, 255, 0.8);
     transform: scale(1.2);
 }
+.btn:active {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+}
 .btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.4);
+}
+.nav-left ul li, .nav-right ul li:not(:last-child), #info .col-info ul li {
+    transition: 0.7s;
+}
+.nav-left ul li:hover, .nav-right ul li:not(:last-child):hover, #info .col-info ul li:hover {
+    transform: scale(1.4);
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-left ul li:active, .nav-right ul li:not(:last-child):active, #info .col-info ul li:active {
+    transform: scale(1);
 }
 .big-container {
     max-width: 1200px;
@@ -421,6 +435,7 @@ footer h3 {
     margin-bottom: 110px;
 }
 #info .lenguage {
+    position: relative;
     padding: 50px 0;
 }
 #info .fa-earth-americas {
@@ -432,3 +447,40 @@ footer h3 {
     position: relative;
     top: 5px;
 }
+#info .lenguage .choose {
+    position: absolute;
+    left: 5%;
+    top: -25%;
+    display: none;
+}
+#info .fa-sort-up:hover {
+    transform: scale(1.2);
+    background-color: #0061ff;
+    border-radius: 30%;
+    cursor: pointer;
+}
+#info .fa-sort-up:hover + .choose {
+    display: block;
+}
+
+
+/* -------------
+    KEYFRAMES
+------------- */
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+    
+  
+  
