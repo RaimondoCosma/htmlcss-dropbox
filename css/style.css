@@ -194,7 +194,7 @@ header .row li:not(:last-child) {
     display: inline-block;
     margin: 50px 50px 50px 0;
 }
-#business-plan .row {
+main .container .row {
     justify-content: space-between;
 }
 #business-plan .row > .col-business {
