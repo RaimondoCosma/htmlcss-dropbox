@@ -190,14 +190,6 @@ main .container .row-enterprise .width70 span {
 
 
 /* -------------
-    SEZIONE UNICA
-------------- */
-#promo .right {
-   text-align: right;
-}
-
-
-/* -------------
     SEZIONE COOPERATION
 ------------- */
 #cooperation .row {
@@ -258,9 +250,6 @@ main .container .row-enterprise .width70 span {
     animation: scale-zoom 1.5s;
     animation-timing-function: cubic-bezier(.71,.33,.67,.16);
 }
-#cooperation .middle-logo img {
-    fill: #000;
-}
 #cooperation .middle-logo hr {
     color: #d0d0d3;
     width: 20%;
@@ -282,12 +271,8 @@ main .container .row-enterprise .width70 span {
     padding: 130px 0;
     justify-content: space-between;
 }
-#promo .width40 {
-   position: relative;
-}
-#promo .width40 button {
-    position: absolute;
-    right: 0;
+#promo .right {
+    text-align: right;
 }
 
 
