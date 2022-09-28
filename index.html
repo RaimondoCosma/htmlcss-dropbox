@@ -66,10 +66,12 @@
             <section class="container">
                 <!-- parte piani business con radio-buttons-->
                 <h2>Trova il piano business che fa per te</h2>
-                <input type="radio" name="mensile">
-                <label for="mensile">Fatturazione mensile</label>
-                <input type="radio" name="annuale">
-                <label for="annuale">Fatturazione mensile</label>
+                <div>
+                    <input type="radio" name="fatturazione" id="mensile">
+                    <label for="mensile">Fatturazione mensile</label>
+                    <input type="radio" name="fatturazione" id="annuale">
+                    <label for="annuale">Fatturazione mensile</label>
+                </div>
                 <!-- /parte piani business con radio buttons-->
                 
                 <!-- parte piani business con flex-->
@@ -309,27 +311,30 @@
             <!-- domande frequenti -->
             <section id="faq" class="container">
                 <h2>Domande frequenti</h2>
-                <div class="question">
-                    <div class="row">
-                        <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?</h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem saepe vel tenetur aliquam accusamus deserunt, ullam quo beatae consequatur quibusdam illo aperiam non quasi fugit quia unde libero cupiditate!</p>
-                    </div>                    
-                </div>
-                <div class="question">
-                    <div class="row">
-                        <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?</h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem saepe vel tenetur aliquam accusamus deserunt, ullam quo beatae consequatur quibusdam illo aperiam non quasi fugit quia unde libero cupiditate!</p>
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="row">
-                        <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance?</h4>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque exercitationem saepe vel tenetur aliquam accusamus deserunt, ullam quo beatae consequatur quibusdam illo aperiam non quasi fugit quia unde libero cupiditate!</p>
-                    </div>
-                </div>
+
+                <ul id="accordion" >
+                    <li>
+                        <label for="first">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance? <i class="fa-solid fa-chevron-down"></i></label>
+                        <input type="radio" name="accordion" id="first" checked>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis vitae aperiam maxime voluptas aliquid deserunt corrupti possimus, quisquam, harum, dignissimos amet? Qui ab, hic commodi corrupti iusto explicabo numquam!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="second">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance? <i class="fa-solid fa-chevron-down"></i></label>
+                        <input type="radio" name="accordion" id="second">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis vitae aperiam maxime voluptas aliquid deserunt corrupti possimus, quisquam, harum, dignissimos amet? Qui ab, hic commodi corrupti iusto explicabo numquam!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="third">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advance? <i class="fa-solid fa-chevron-down"></i></label>
+                        <input type="radio" name="accordion" id="third">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit debitis vitae aperiam maxime voluptas aliquid deserunt corrupti possimus, quisquam, harum, dignissimos amet? Qui ab, hic commodi corrupti iusto explicabo numquam!</p>
+                        </div>
+                    </li>
+                </ul>
             </section>
             <!-- /domande frequenti -->
         </main>
