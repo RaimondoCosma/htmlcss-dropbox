@@ -289,39 +289,15 @@ main .container .row-enterprise .width70 span {
 #faq h2 {
     margin-bottom: 60px;
 }
-#faq .question {
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
-}
-#faq .question .row {
-    padding: 40px 0;
-}
-#faq .question .row i {
-    margin-right: 40px;
-}
-#faq .question .row i:hover {
-    background-color: lightblue;
-    border-radius: 30%;
-    border: 1px solid black;
-    cursor: pointer;
-}
-#faq .question p {
-    display: none;
-    transition: 0.4s;
-}
-#faq .question .row i:hover + p {
-    display: block;
-    padding-top: 40px;
-}
-#accordion li {
+#faq #accordion li {
     list-style: none;
     border-top: 1px solid #999999;
     padding: 40px 0;
 }
-#accordion li:last-child {
+#faq #accordion li:last-child {
     border-bottom: 1px solid #999999;
 }
-#accordion li label{
+#faq #accordion li label{
     color: black;
     font-weight: bold;
     display: flex;
@@ -329,15 +305,18 @@ main .container .row-enterprise .width70 span {
     justify-content: space-between;
     cursor: pointer;
 }
-#accordion label + input[type="radio"] {
+#faq #accordion li .fa-chevron-down {
+    padding-right: 50px;
+}
+#faq #accordion label + input[type="radio"] {
     display: none;
 }
-#accordion li .content {
+#faq #accordion li .content {
     max-height: 0;
     overflow: hidden;
     transition: 0.7s;
 }
-#accordion label + input[type="radio"]:checked + .content {
+#faq #accordion label + input[type="radio"]:checked + .content {
     max-height: 300px;
     margin: 40px 0;
 }
@@ -393,9 +372,12 @@ footer h3 {
 #info .fa-sort-up:hover {
     transform: scale(1.4);
     background-color: #0061ff;
-    border-radius: 30%;
+    border-radius: 35%;
     cursor: pointer;
 }
 #info .fa-sort-up:hover + .choose {
     display: block;
+    border-radius: 40%;
+    animation: bounce 0.8s infinite alternate;
+    animation-timing-function: cubic-bezier(0,-0.45,.16,1.03);
 }
