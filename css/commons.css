@@ -12,6 +12,10 @@
     text-decoration: none;
     color: inherit;
 }
+
+/* --------------
+    BUTTONS
+-------------- */
 .btn {
     background-color: rgba(0, 97, 255, 1);
     border: none;
@@ -31,7 +35,7 @@
     font-weight: normal;
     border: 1px solid black;
 }
-.btn:hover {
+.btn:hover{
     background-color: rgba(0, 97, 255, 0.8);
     transform: scale(1.2);
 }
@@ -41,17 +45,34 @@
 .btn-secondary:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
-.nav-left ul li, .nav-right ul li:not(:last-child), #info .col-info ul li {
-    transition: 0.7s;
+
+/* --------------
+    NAV-BAR
+-------------- */
+.logo {
+    transition: transform 0.4s;
 }
-.nav-left ul li:hover, .nav-right ul li:not(:last-child):hover, #info .col-info ul li:hover {
-    transform: scale(1.4);
-    font-weight: bold;
+.logo:hover {
+    transform: scale(1.2);
+}
+.logo:active {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+}
+.nav-left ul li, .nav-right ul li:not(:last-child), #info .col-info ul li {
+    transition: 0.4s;
+}
+.nav-left ul li:not(:first-child):hover, .nav-right ul li:not(:last-child):hover, #info .col-info ul li:hover {
+    padding-bottom: 3px;
+    color: lawngreen;
     cursor: pointer;
 }
 .nav-left ul li:active, .nav-right ul li:not(:last-child):active, #info .col-info ul li:active {
-    transform: scale(1);
+    color: inherit;
 }
+
+/* --------------
+    CONTAINER
+-------------- */
 .big-container {
     max-width: 1200px;
     margin: auto;
@@ -60,9 +81,10 @@
     max-width: 1000px;
     margin: auto;
 }
-i {
-    color: black;
-}
+
+/* --------------
+    COMMON WIDTH
+-------------- */
 .width30 {
     width: 30%;
 }
@@ -78,13 +100,17 @@ i {
 .width40 {
     width: 40%;
 }
-.filter {
-    filter: invert(1);
-}
 #cooperation .row .row .row {
     justify-content: center;
     align-items: center;
 }
 #cooperation .cooperation-logos img {
     width: 50%;    
+}
+
+/* --------------
+    FILTER
+-------------- */
+.filter {
+    filter: invert(1);
 }

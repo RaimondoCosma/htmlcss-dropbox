@@ -21,6 +21,9 @@ h3 {
     font-size: 40px;
     color: black;
 }
+i {
+    color: black;
+}
 strong {
     color: black;
     display: block;

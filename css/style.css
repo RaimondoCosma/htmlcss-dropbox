@@ -29,7 +29,197 @@ header .row li:not(:last-child) {
 .row li a > img {
     padding: 12px 0 5px;
 }
+@media screen and (max-width:1100px) {
+    h1 {
+        font-size: 50px;
+    }    
+}
 
+/* -------------
+    HAMBURGER DI SINISTRA   
+------------- */
+.hamburger-left {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 10;
+}
+.hamburger-left::before, .hamburger-left::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: #000;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+.hamburger-left::before {
+    top: -10px;
+    left: 0;
+    width: 20px;
+}
+.hamburger-left::after {
+    top: 10px;
+    left: 0;
+    width: 25px;
+}
+.toggle-menu-left {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 11;
+    cursor: pointer;
+}
+.hamburger-left, .toggle-menu-left {
+    display: none;
+}
+.nav-left input:checked ~ .hamburger-left {
+    background-color: transparent;
+}
+.nav-left input:checked ~ .hamburger-left::before {
+    top: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+.nav-left input:checked ~ .hamburger-left::after {
+    top: 0;
+    width: 30px;
+    transform: rotate(45deg);
+}
+.nav-left input:checked ~ ul {
+    left: 0;
+    box-shadow: 20px 0 40px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 1100px) {
+    header {
+        height: 100px;
+    }
+    .hamburger-left, .toggle-menu-left {
+        display: block;
+        position: fixed;
+        top: 40px;
+        left: 40px;
+    }
+    .toggle-menu-left {
+        opacity: 0;
+    }
+    .nav-left ul {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 380px;
+        padding-top: 100px;
+        background-color: white;
+        transition: 0.4s;
+    }
+    .nav-left ul li {
+        padding-top: 40px;
+        box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .nav-left ul li:not(:last-child) {
+        margin-right: 0;
+    }
+}
+/* -------------
+    HAMBURGER DI DESTRA   
+------------- */
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 10;
+}
+.hamburger::after, .hamburger::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: black;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+.hamburger::before {
+    top: -10px;
+    width: 20px;
+}
+.hamburger::after {
+    top: 10px;
+    width: 25px;
+}
+.toggle-menu {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 11;
+    cursor: pointer;
+    opacity: 0;
+}
+.hamburger, .toggle-menu {
+    display: none;
+}
+.nav-right input:checked ~ .hamburger {
+    background-color: transparent;
+}
+.nav-right input:checked ~ .hamburger::before {
+    top: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+.nav-right input:checked ~ .hamburger::after {
+    top: 0;
+    width: 30px;
+    transform: rotate(45deg);
+}
+.nav-right input:checked ~ ul {
+    right: 0;
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 1100px) {
+    .hamburger, .toggle-menu {
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: 40px;
+    }
+    .nav-right {
+        flex-direction: column;
+    }
+    .nav-right ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 380px;
+        padding-top: 100px;
+        background-color: white;
+        transition: 0.4s;
+    }
+    .nav-right ul li:not(:last-child) {
+        margin-right: 0;
+        padding-top: 40px;
+        box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 20%);
+
+    }
+    .nav-right ul li {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
 
 /* -------------
     MAIN   
@@ -60,6 +250,14 @@ header .row li:not(:last-child) {
 #hero .big-container .row .width70 img {
     position: absolute;
     width: 100%;
+}
+@media screen and (max-width: 1100px) {
+   #hero .width30 {
+    width: 50%;
+   }
+   #hero .big-container .row .width70 {
+    width: 50%;
+   }
 }
 
 
